@@ -1,0 +1,6 @@
+framework module Pods_GherkinBackground_GherkinBackgroundUITests {
+  umbrella header "Pods-GherkinBackground-GherkinBackgroundUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

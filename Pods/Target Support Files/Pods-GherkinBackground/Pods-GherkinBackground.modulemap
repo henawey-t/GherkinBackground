@@ -1,0 +1,6 @@
+framework module Pods_GherkinBackground {
+  umbrella header "Pods-GherkinBackground-umbrella.h"
+
+  export *
+  module * { export * }
+}

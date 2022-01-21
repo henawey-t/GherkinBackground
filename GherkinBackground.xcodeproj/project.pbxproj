@@ -3,28 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1F4B15DF293F1C5DE0117E /* Pods_GherkinBackground_GherkinBackgroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B280B69A1D643E53F5E0DB5F /* Pods_GherkinBackground_GherkinBackgroundUITests.framework */; };
 		EB26ED90279B0D01007256D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED8F279B0D01007256D9 /* AppDelegate.swift */; };
-		EB26ED92279B0D01007256D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED91279B0D01007256D9 /* SceneDelegate.swift */; };
-		EB26ED94279B0D01007256D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED93279B0D01007256D9 /* ViewController.swift */; };
-		EB26ED97279B0D01007256D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED95279B0D01007256D9 /* Main.storyboard */; };
+		EB26ED94279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED93279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift */; };
 		EB26ED99279B0D02007256D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED98279B0D02007256D9 /* Assets.xcassets */; };
 		EB26ED9C279B0D02007256D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */; };
-		EB26EDA7279B0D02007256D9 /* GherkinBackgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */; };
-		EB26EDB2279B0D02007256D9 /* GherkinBackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */; };
+		EB26EDB2279B0D02007256D9 /* BackgroundDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26EDB1279B0D02007256D9 /* BackgroundDefinitions.swift */; };
+		EB6C0AF5279B11E10034763C /* Configurator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0AF4279B11E10034763C /* Configurator.m */; };
+		EB6C0AF7279B12190034763C /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0AF6279B12190034763C /* Loader.swift */; };
+		EB6C0AFE279B13800034763C /* Features in Resources */ = {isa = PBXBuildFile; fileRef = EB6C0AFD279B13800034763C /* Features */; };
+		EB6C0B00279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0AFF279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift */; };
+		EB6C0B04279B241B0034763C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B03279B241B0034763C /* ViewController.swift */; };
+		EB6C0B06279B3BED0034763C /* BackgroundEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */; };
+		EB6C0B07279B3BED0034763C /* BackgroundEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */; };
+		EB6C0B09279B3C100034763C /* AppEnvironmentSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */; };
+		EB6C0B0B279B3C590034763C /* BackgroundEnvironmentSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED93279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift */; };
+		F053142A6D0ADAC5D94072AE /* Pods_GherkinBackground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8510FA1DBDA4AE92CB2004 /* Pods_GherkinBackground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EB26EDA3279B0D02007256D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB26ED84279B0D01007256D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB26ED8B279B0D01007256D9;
-			remoteInfo = GherkinBackground;
-		};
 		EB26EDAE279B0D02007256D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EB26ED84279B0D01007256D9 /* Project object */;
@@ -35,20 +36,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA032686F6CEB15249A2B07 /* Pods-GherkinBackgroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackgroundTests.release.xcconfig"; path = "Target Support Files/Pods-GherkinBackgroundTests/Pods-GherkinBackgroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		14023F08C60626AD6A4404EE /* Pods-GherkinBackground-GherkinBackgroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground-GherkinBackgroundUITests.release.xcconfig"; path = "Target Support Files/Pods-GherkinBackground-GherkinBackgroundUITests/Pods-GherkinBackground-GherkinBackgroundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1646B40F1C82891A72C96DF7 /* Pods-GherkinBackground-GherkinBackgroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground-GherkinBackgroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-GherkinBackground-GherkinBackgroundUITests/Pods-GherkinBackground-GherkinBackgroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3000428ABA1635C738818B84 /* Pods_GherkinBackgroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GherkinBackgroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B280B69A1D643E53F5E0DB5F /* Pods_GherkinBackground_GherkinBackgroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GherkinBackground_GherkinBackgroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8510FA1DBDA4AE92CB2004 /* Pods_GherkinBackground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GherkinBackground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC6298611FABED1D0E0E937 /* Pods-GherkinBackgroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackgroundTests.debug.xcconfig"; path = "Target Support Files/Pods-GherkinBackgroundTests/Pods-GherkinBackgroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB26ED8C279B0D01007256D9 /* GherkinBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GherkinBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB26ED8F279B0D01007256D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB26ED91279B0D01007256D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB26ED93279B0D01007256D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB26ED96279B0D01007256D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB26ED93279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEnvironmentSetupViewController.swift; sourceTree = "<group>"; };
 		EB26ED98279B0D02007256D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB26ED9B279B0D02007256D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB26ED9D279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GherkinBackgroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GherkinBackgroundTests.swift; sourceTree = "<group>"; };
-		EB26EDA8279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB26EDAD279B0D02007256D9 /* GherkinBackgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GherkinBackgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GherkinBackgroundUITests.swift; sourceTree = "<group>"; };
+		EB26EDB1279B0D02007256D9 /* BackgroundDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDefinitions.swift; sourceTree = "<group>"; };
 		EB26EDB3279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6C0AF3279B11E10034763C /* GherkinBackgroundUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GherkinBackgroundUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6C0AF4279B11E10034763C /* Configurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Configurator.m; sourceTree = "<group>"; };
+		EB6C0AF6279B12190034763C /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		EB6C0AFD279B13800034763C /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
+		EB6C0AFF279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrBillPostsToHisOwnBlogDefinitions.swift; sourceTree = "<group>"; };
+		EB6C0B03279B241B0034763C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEnvironment.swift; sourceTree = "<group>"; };
+		EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentSetup.swift; sourceTree = "<group>"; };
+		ED44D0DC0ECCE7A40ED6F540 /* Pods-GherkinBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground.debug.xcconfig"; path = "Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground.debug.xcconfig"; sourceTree = "<group>"; };
+		FA6047D7C01B5BBD113E81AB /* Pods-GherkinBackground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground.release.xcconfig"; path = "Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB26ED9F279B0D02007256D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F053142A6D0ADAC5D94072AE /* Pods_GherkinBackground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +77,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1F4B15DF293F1C5DE0117E /* Pods_GherkinBackground_GherkinBackgroundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A91D6E75C2ED00EDB33D1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8510FA1DBDA4AE92CB2004 /* Pods_GherkinBackground.framework */,
+				B280B69A1D643E53F5E0DB5F /* Pods_GherkinBackground_GherkinBackgroundUITests.framework */,
+				3000428ABA1635C738818B84 /* Pods_GherkinBackgroundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB26ED83279B0D01007256D9 = {
 			isa = PBXGroup;
 			children = (
 				EB26ED8E279B0D01007256D9 /* GherkinBackground */,
-				EB26EDA5279B0D02007256D9 /* GherkinBackgroundTests */,
 				EB26EDB0279B0D02007256D9 /* GherkinBackgroundUITests */,
 				EB26ED8D279B0D01007256D9 /* Products */,
+				F2DBFD2AA644FAA6AEBAD541 /* Pods */,
+				37A91D6E75C2ED00EDB33D1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				EB26ED8C279B0D01007256D9 /* GherkinBackground.app */,
-				EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */,
 				EB26EDAD279B0D02007256D9 /* GherkinBackgroundUITests.xctest */,
 			);
 			name = Products;
@@ -99,10 +117,9 @@
 		EB26ED8E279B0D01007256D9 /* GherkinBackground */ = {
 			isa = PBXGroup;
 			children = (
+				EB6C0B0A279B3C450034763C /* BackgroundEnviroment */,
+				EB6C0B02279B24050034763C /* ViewControllers */,
 				EB26ED8F279B0D01007256D9 /* AppDelegate.swift */,
-				EB26ED91279B0D01007256D9 /* SceneDelegate.swift */,
-				EB26ED93279B0D01007256D9 /* ViewController.swift */,
-				EB26ED95279B0D01007256D9 /* Main.storyboard */,
 				EB26ED98279B0D02007256D9 /* Assets.xcassets */,
 				EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */,
 				EB26ED9D279B0D02007256D9 /* Info.plist */,
@@ -110,22 +127,65 @@
 			path = GherkinBackground;
 			sourceTree = "<group>";
 		};
-		EB26EDA5279B0D02007256D9 /* GherkinBackgroundTests */ = {
-			isa = PBXGroup;
-			children = (
-				EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */,
-				EB26EDA8279B0D02007256D9 /* Info.plist */,
-			);
-			path = GherkinBackgroundTests;
-			sourceTree = "<group>";
-		};
 		EB26EDB0279B0D02007256D9 /* GherkinBackgroundUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */,
+				EB6C0AFD279B13800034763C /* Features */,
+				EB6C0B01279B1EC00034763C /* Definitions */,
+				EB6C0AF8279B12260034763C /* Setup */,
 				EB26EDB3279B0D02007256D9 /* Info.plist */,
+				EB6C0AF3279B11E10034763C /* GherkinBackgroundUITests-Bridging-Header.h */,
 			);
 			path = GherkinBackgroundUITests;
+			sourceTree = "<group>";
+		};
+		EB6C0AF8279B12260034763C /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */,
+				EB6C0AF4279B11E10034763C /* Configurator.m */,
+				EB6C0AF6279B12190034763C /* Loader.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		EB6C0B01279B1EC00034763C /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				EB26EDB1279B0D02007256D9 /* BackgroundDefinitions.swift */,
+				EB6C0AFF279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		EB6C0B02279B24050034763C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C0B03279B241B0034763C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB6C0B0A279B3C450034763C /* BackgroundEnviroment */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */,
+				EB26ED93279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift */,
+			);
+			path = BackgroundEnviroment;
+			sourceTree = "<group>";
+		};
+		F2DBFD2AA644FAA6AEBAD541 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED44D0DC0ECCE7A40ED6F540 /* Pods-GherkinBackground.debug.xcconfig */,
+				FA6047D7C01B5BBD113E81AB /* Pods-GherkinBackground.release.xcconfig */,
+				1646B40F1C82891A72C96DF7 /* Pods-GherkinBackground-GherkinBackgroundUITests.debug.xcconfig */,
+				14023F08C60626AD6A4404EE /* Pods-GherkinBackground-GherkinBackgroundUITests.release.xcconfig */,
+				CFC6298611FABED1D0E0E937 /* Pods-GherkinBackgroundTests.debug.xcconfig */,
+				0EA032686F6CEB15249A2B07 /* Pods-GherkinBackgroundTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB26EDB6279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackground" */;
 			buildPhases = (
+				AB2B959A63FCA1006ED017D0 /* [CP] Check Pods Manifest.lock */,
 				EB26ED88279B0D01007256D9 /* Sources */,
 				EB26ED89279B0D01007256D9 /* Frameworks */,
 				EB26ED8A279B0D01007256D9 /* Resources */,
+				E6385B1AE3F60798B33D75A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,31 +210,15 @@
 			productReference = EB26ED8C279B0D01007256D9 /* GherkinBackground.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB26EDA1279B0D02007256D9 /* GherkinBackgroundTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB26EDB9279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundTests" */;
-			buildPhases = (
-				EB26ED9E279B0D02007256D9 /* Sources */,
-				EB26ED9F279B0D02007256D9 /* Frameworks */,
-				EB26EDA0279B0D02007256D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB26EDA4279B0D02007256D9 /* PBXTargetDependency */,
-			);
-			name = GherkinBackgroundTests;
-			productName = GherkinBackgroundTests;
-			productReference = EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		EB26EDAC279B0D02007256D9 /* GherkinBackgroundUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB26EDBC279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundUITests" */;
 			buildPhases = (
+				6F399F1853C7D79C930E1A5E /* [CP] Check Pods Manifest.lock */,
 				EB26EDA9279B0D02007256D9 /* Sources */,
 				EB26EDAA279B0D02007256D9 /* Frameworks */,
 				EB26EDAB279B0D02007256D9 /* Resources */,
+				4652403495DE0C0B3D8469C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,12 +242,9 @@
 					EB26ED8B279B0D01007256D9 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					EB26EDA1279B0D02007256D9 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = EB26ED8B279B0D01007256D9;
-					};
 					EB26EDAC279B0D02007256D9 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = EB26ED8B279B0D01007256D9;
 					};
 				};
@@ -220,7 +263,6 @@
 			projectRoot = "";
 			targets = (
 				EB26ED8B279B0D01007256D9 /* GherkinBackground */,
-				EB26EDA1279B0D02007256D9 /* GherkinBackgroundTests */,
 				EB26EDAC279B0D02007256D9 /* GherkinBackgroundUITests */,
 			);
 		};
@@ -233,14 +275,6 @@
 			files = (
 				EB26ED9C279B0D02007256D9 /* LaunchScreen.storyboard in Resources */,
 				EB26ED99279B0D02007256D9 /* Assets.xcassets in Resources */,
-				EB26ED97279B0D01007256D9 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB26EDA0279B0D02007256D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,27 +282,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6C0AFE279B13800034763C /* Features in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4652403495DE0C0B3D8469C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground-GherkinBackgroundUITests/Pods-GherkinBackground-GherkinBackgroundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground-GherkinBackgroundUITests/Pods-GherkinBackground-GherkinBackgroundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground-GherkinBackgroundUITests/Pods-GherkinBackground-GherkinBackgroundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F399F1853C7D79C930E1A5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GherkinBackground-GherkinBackgroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2B959A63FCA1006ED017D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GherkinBackground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6385B1AE3F60798B33D75A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB26ED88279B0D01007256D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB26ED94279B0D01007256D9 /* ViewController.swift in Sources */,
+				EB6C0B06279B3BED0034763C /* BackgroundEnvironment.swift in Sources */,
+				EB26ED94279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift in Sources */,
 				EB26ED90279B0D01007256D9 /* AppDelegate.swift in Sources */,
-				EB26ED92279B0D01007256D9 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB26ED9E279B0D02007256D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB26EDA7279B0D02007256D9 /* GherkinBackgroundTests.swift in Sources */,
+				EB6C0B04279B241B0034763C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,18 +385,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB26EDB2279B0D02007256D9 /* GherkinBackgroundUITests.swift in Sources */,
+				EB6C0AF5279B11E10034763C /* Configurator.m in Sources */,
+				EB26EDB2279B0D02007256D9 /* BackgroundDefinitions.swift in Sources */,
+				EB6C0B0B279B3C590034763C /* BackgroundEnvironmentSetupViewController.swift in Sources */,
+				EB6C0AF7279B12190034763C /* Loader.swift in Sources */,
+				EB6C0B09279B3C100034763C /* AppEnvironmentSetup.swift in Sources */,
+				EB6C0B07279B3BED0034763C /* BackgroundEnvironment.swift in Sources */,
+				EB6C0B00279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EB26EDA4279B0D02007256D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB26ED8B279B0D01007256D9 /* GherkinBackground */;
-			targetProxy = EB26EDA3279B0D02007256D9 /* PBXContainerItemProxy */;
-		};
 		EB26EDAF279B0D02007256D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB26ED8B279B0D01007256D9 /* GherkinBackground */;
@@ -296,14 +406,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB26ED95279B0D01007256D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB26ED96279B0D01007256D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +535,7 @@
 		};
 		EB26EDB7279B0D02007256D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED44D0DC0ECCE7A40ED6F540 /* Pods-GherkinBackground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,12 +549,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EB26EDB8279B0D02007256D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA6047D7C01B5BBD113E81AB /* Pods-GherkinBackground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,58 +569,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		EB26EDBA279B0D02007256D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7P5VTAQQT5;
-				INFOPLIST_FILE = GherkinBackgroundTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GherkinBackground.app/GherkinBackground";
-			};
-			name = Debug;
-		};
-		EB26EDBB279B0D02007256D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7P5VTAQQT5;
-				INFOPLIST_FILE = GherkinBackgroundTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GherkinBackground.app/GherkinBackground";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		EB26EDBD279B0D02007256D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1646B40F1C82891A72C96DF7 /* Pods-GherkinBackground-GherkinBackgroundUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P5VTAQQT5;
 				INFOPLIST_FILE = GherkinBackgroundUITests/Info.plist;
@@ -527,6 +588,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GherkinBackgroundUITests/GherkinBackgroundUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GherkinBackground;
@@ -535,8 +598,9 @@
 		};
 		EB26EDBE279B0D02007256D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14023F08C60626AD6A4404EE /* Pods-GherkinBackground-GherkinBackgroundUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7P5VTAQQT5;
 				INFOPLIST_FILE = GherkinBackgroundUITests/Info.plist;
@@ -547,6 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GherkinBackgroundUITests/GherkinBackgroundUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GherkinBackground;
@@ -570,15 +635,6 @@
 			buildConfigurations = (
 				EB26EDB7279B0D02007256D9 /* Debug */,
 				EB26EDB8279B0D02007256D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB26EDB9279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB26EDBA279B0D02007256D9 /* Debug */,
-				EB26EDBB279B0D02007256D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
