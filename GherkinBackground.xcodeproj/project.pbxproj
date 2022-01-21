@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB26ED90279B0D01007256D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED8F279B0D01007256D9 /* AppDelegate.swift */; };
+		EB26ED92279B0D01007256D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED91279B0D01007256D9 /* SceneDelegate.swift */; };
+		EB26ED94279B0D01007256D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED93279B0D01007256D9 /* ViewController.swift */; };
+		EB26ED97279B0D01007256D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED95279B0D01007256D9 /* Main.storyboard */; };
+		EB26ED99279B0D02007256D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED98279B0D02007256D9 /* Assets.xcassets */; };
+		EB26ED9C279B0D02007256D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */; };
+		EB26EDA7279B0D02007256D9 /* GherkinBackgroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */; };
+		EB26EDB2279B0D02007256D9 /* GherkinBackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB26EDA3279B0D02007256D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB26ED84279B0D01007256D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB26ED8B279B0D01007256D9;
+			remoteInfo = GherkinBackground;
+		};
+		EB26EDAE279B0D02007256D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB26ED84279B0D01007256D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB26ED8B279B0D01007256D9;
+			remoteInfo = GherkinBackground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB26ED8C279B0D01007256D9 /* GherkinBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GherkinBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB26ED8F279B0D01007256D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB26ED91279B0D01007256D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB26ED93279B0D01007256D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB26ED96279B0D01007256D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB26ED98279B0D02007256D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB26ED9B279B0D02007256D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB26ED9D279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GherkinBackgroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GherkinBackgroundTests.swift; sourceTree = "<group>"; };
+		EB26EDA8279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB26EDAD279B0D02007256D9 /* GherkinBackgroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GherkinBackgroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GherkinBackgroundUITests.swift; sourceTree = "<group>"; };
+		EB26EDB3279B0D02007256D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB26ED89279B0D01007256D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26ED9F279B0D02007256D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26EDAA279B0D02007256D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB26ED83279B0D01007256D9 = {
+			isa = PBXGroup;
+			children = (
+				EB26ED8E279B0D01007256D9 /* GherkinBackground */,
+				EB26EDA5279B0D02007256D9 /* GherkinBackgroundTests */,
+				EB26EDB0279B0D02007256D9 /* GherkinBackgroundUITests */,
+				EB26ED8D279B0D01007256D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB26ED8D279B0D01007256D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB26ED8C279B0D01007256D9 /* GherkinBackground.app */,
+				EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */,
+				EB26EDAD279B0D02007256D9 /* GherkinBackgroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB26ED8E279B0D01007256D9 /* GherkinBackground */ = {
+			isa = PBXGroup;
+			children = (
+				EB26ED8F279B0D01007256D9 /* AppDelegate.swift */,
+				EB26ED91279B0D01007256D9 /* SceneDelegate.swift */,
+				EB26ED93279B0D01007256D9 /* ViewController.swift */,
+				EB26ED95279B0D01007256D9 /* Main.storyboard */,
+				EB26ED98279B0D02007256D9 /* Assets.xcassets */,
+				EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */,
+				EB26ED9D279B0D02007256D9 /* Info.plist */,
+			);
+			path = GherkinBackground;
+			sourceTree = "<group>";
+		};
+		EB26EDA5279B0D02007256D9 /* GherkinBackgroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB26EDA6279B0D02007256D9 /* GherkinBackgroundTests.swift */,
+				EB26EDA8279B0D02007256D9 /* Info.plist */,
+			);
+			path = GherkinBackgroundTests;
+			sourceTree = "<group>";
+		};
+		EB26EDB0279B0D02007256D9 /* GherkinBackgroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB26EDB1279B0D02007256D9 /* GherkinBackgroundUITests.swift */,
+				EB26EDB3279B0D02007256D9 /* Info.plist */,
+			);
+			path = GherkinBackgroundUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB26ED8B279B0D01007256D9 /* GherkinBackground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB26EDB6279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackground" */;
+			buildPhases = (
+				EB26ED88279B0D01007256D9 /* Sources */,
+				EB26ED89279B0D01007256D9 /* Frameworks */,
+				EB26ED8A279B0D01007256D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GherkinBackground;
+			productName = GherkinBackground;
+			productReference = EB26ED8C279B0D01007256D9 /* GherkinBackground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB26EDA1279B0D02007256D9 /* GherkinBackgroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB26EDB9279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundTests" */;
+			buildPhases = (
+				EB26ED9E279B0D02007256D9 /* Sources */,
+				EB26ED9F279B0D02007256D9 /* Frameworks */,
+				EB26EDA0279B0D02007256D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB26EDA4279B0D02007256D9 /* PBXTargetDependency */,
+			);
+			name = GherkinBackgroundTests;
+			productName = GherkinBackgroundTests;
+			productReference = EB26EDA2279B0D02007256D9 /* GherkinBackgroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB26EDAC279B0D02007256D9 /* GherkinBackgroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB26EDBC279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundUITests" */;
+			buildPhases = (
+				EB26EDA9279B0D02007256D9 /* Sources */,
+				EB26EDAA279B0D02007256D9 /* Frameworks */,
+				EB26EDAB279B0D02007256D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB26EDAF279B0D02007256D9 /* PBXTargetDependency */,
+			);
+			name = GherkinBackgroundUITests;
+			productName = GherkinBackgroundUITests;
+			productReference = EB26EDAD279B0D02007256D9 /* GherkinBackgroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB26ED84279B0D01007256D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EB26ED8B279B0D01007256D9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EB26EDA1279B0D02007256D9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EB26ED8B279B0D01007256D9;
+					};
+					EB26EDAC279B0D02007256D9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EB26ED8B279B0D01007256D9;
+					};
+				};
+			};
+			buildConfigurationList = EB26ED87279B0D01007256D9 /* Build configuration list for PBXProject "GherkinBackground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB26ED83279B0D01007256D9;
+			productRefGroup = EB26ED8D279B0D01007256D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB26ED8B279B0D01007256D9 /* GherkinBackground */,
+				EB26EDA1279B0D02007256D9 /* GherkinBackgroundTests */,
+				EB26EDAC279B0D02007256D9 /* GherkinBackgroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB26ED8A279B0D01007256D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB26ED9C279B0D02007256D9 /* LaunchScreen.storyboard in Resources */,
+				EB26ED99279B0D02007256D9 /* Assets.xcassets in Resources */,
+				EB26ED97279B0D01007256D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26EDA0279B0D02007256D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26EDAB279B0D02007256D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB26ED88279B0D01007256D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB26ED94279B0D01007256D9 /* ViewController.swift in Sources */,
+				EB26ED90279B0D01007256D9 /* AppDelegate.swift in Sources */,
+				EB26ED92279B0D01007256D9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26ED9E279B0D02007256D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB26EDA7279B0D02007256D9 /* GherkinBackgroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB26EDA9279B0D02007256D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB26EDB2279B0D02007256D9 /* GherkinBackgroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB26EDA4279B0D02007256D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB26ED8B279B0D01007256D9 /* GherkinBackground */;
+			targetProxy = EB26EDA3279B0D02007256D9 /* PBXContainerItemProxy */;
+		};
+		EB26EDAF279B0D02007256D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB26ED8B279B0D01007256D9 /* GherkinBackground */;
+			targetProxy = EB26EDAE279B0D02007256D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB26ED95279B0D01007256D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB26ED96279B0D01007256D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB26ED9A279B0D02007256D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB26ED9B279B0D02007256D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB26EDB4279B0D02007256D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB26EDB5279B0D02007256D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB26EDB7279B0D02007256D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB26EDB8279B0D02007256D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB26EDBA279B0D02007256D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackgroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GherkinBackground.app/GherkinBackground";
+			};
+			name = Debug;
+		};
+		EB26EDBB279B0D02007256D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackgroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GherkinBackground.app/GherkinBackground";
+			};
+			name = Release;
+		};
+		EB26EDBD279B0D02007256D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackgroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GherkinBackground;
+			};
+			name = Debug;
+		};
+		EB26EDBE279B0D02007256D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P5VTAQQT5;
+				INFOPLIST_FILE = GherkinBackgroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.talabat.GherkinBackgroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GherkinBackground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB26ED87279B0D01007256D9 /* Build configuration list for PBXProject "GherkinBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB26EDB4279B0D02007256D9 /* Debug */,
+				EB26EDB5279B0D02007256D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB26EDB6279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB26EDB7279B0D02007256D9 /* Debug */,
+				EB26EDB8279B0D02007256D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB26EDB9279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB26EDBA279B0D02007256D9 /* Debug */,
+				EB26EDBB279B0D02007256D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB26EDBC279B0D02007256D9 /* Build configuration list for PBXNativeTarget "GherkinBackgroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB26EDBD279B0D02007256D9 /* Debug */,
+				EB26EDBE279B0D02007256D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB26ED84279B0D01007256D9 /* Project object */;
+}
