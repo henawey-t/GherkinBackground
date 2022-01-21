@@ -13,12 +13,18 @@ class Loader: NSObject {
         beforeStart {
             BackgroundDefinitions.stepsDefinition()
             DrBillPostsToHisOwnBlogDefinitions.stepsDefinition()
+            DrBillTriesToPostToSomebodyElseSBlogAndFails.stepsDefinition()
         }
 
         before { scenario in
+            CurrentTest.shared.create(scenario: scenario!.name)
             let app = XCUIApplication()
             app.launchArguments = ["-isUITest"]
             app.launch()
+        }
+
+        after { _ in
+            CurrentTest.shared.reset()
         }
 
         guard let cucumberish = Cucumberish.instance() else {

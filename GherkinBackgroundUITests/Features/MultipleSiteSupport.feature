@@ -11,3 +11,8 @@ Feature: Multiple site support
     Given I am logged in as Dr. Bill
     When I try to post to "Expensive Therapy"
     Then I should see "Your article was published."
+
+  Scenario: Dr. Bill tries to post to somebody else's blog, and fails
+    Given I am logged in as Dr. Bill
+    When I try to post to "Greg's anti-tax rants"
+    Then I should see "Hey! That's not your blog!"

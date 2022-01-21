@@ -20,8 +20,8 @@
 		EB6C0B04279B241B0034763C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B03279B241B0034763C /* ViewController.swift */; };
 		EB6C0B06279B3BED0034763C /* BackgroundEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */; };
 		EB6C0B07279B3BED0034763C /* BackgroundEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */; };
-		EB6C0B09279B3C100034763C /* AppEnvironmentSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */; };
-		EB6C0B0B279B3C590034763C /* BackgroundEnvironmentSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26ED93279B0D01007256D9 /* BackgroundEnvironmentSetupViewController.swift */; };
+		EB6C0B09279B3C100034763C /* CurrentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0B08279B3C100034763C /* CurrentTest.swift */; };
+		EB9DFB7C279B5C520023938B /* DrBillTriesToPostToSomebodyElseSBlogAndFails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9DFB7B279B5C520023938B /* DrBillTriesToPostToSomebodyElseSBlogAndFails.swift */; };
 		F053142A6D0ADAC5D94072AE /* Pods_GherkinBackground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8510FA1DBDA4AE92CB2004 /* Pods_GherkinBackground.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,8 @@
 		EB6C0AFF279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrBillPostsToHisOwnBlogDefinitions.swift; sourceTree = "<group>"; };
 		EB6C0B03279B241B0034763C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB6C0B05279B3BED0034763C /* BackgroundEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEnvironment.swift; sourceTree = "<group>"; };
-		EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentSetup.swift; sourceTree = "<group>"; };
+		EB6C0B08279B3C100034763C /* CurrentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTest.swift; sourceTree = "<group>"; };
+		EB9DFB7B279B5C520023938B /* DrBillTriesToPostToSomebodyElseSBlogAndFails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrBillTriesToPostToSomebodyElseSBlogAndFails.swift; sourceTree = "<group>"; };
 		ED44D0DC0ECCE7A40ED6F540 /* Pods-GherkinBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground.debug.xcconfig"; path = "Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6047D7C01B5BBD113E81AB /* Pods-GherkinBackground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GherkinBackground.release.xcconfig"; path = "Target Support Files/Pods-GherkinBackground/Pods-GherkinBackground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +143,7 @@
 		EB6C0AF8279B12260034763C /* Setup */ = {
 			isa = PBXGroup;
 			children = (
-				EB6C0B08279B3C100034763C /* AppEnvironmentSetup.swift */,
+				EB6C0B08279B3C100034763C /* CurrentTest.swift */,
 				EB6C0AF4279B11E10034763C /* Configurator.m */,
 				EB6C0AF6279B12190034763C /* Loader.swift */,
 			);
@@ -154,6 +155,7 @@
 			children = (
 				EB26EDB1279B0D02007256D9 /* BackgroundDefinitions.swift */,
 				EB6C0AFF279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift */,
+				EB9DFB7B279B5C520023938B /* DrBillTriesToPostToSomebodyElseSBlogAndFails.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -385,11 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9DFB7C279B5C520023938B /* DrBillTriesToPostToSomebodyElseSBlogAndFails.swift in Sources */,
 				EB6C0AF5279B11E10034763C /* Configurator.m in Sources */,
 				EB26EDB2279B0D02007256D9 /* BackgroundDefinitions.swift in Sources */,
-				EB6C0B0B279B3C590034763C /* BackgroundEnvironmentSetupViewController.swift in Sources */,
 				EB6C0AF7279B12190034763C /* Loader.swift in Sources */,
-				EB6C0B09279B3C100034763C /* AppEnvironmentSetup.swift in Sources */,
+				EB6C0B09279B3C100034763C /* CurrentTest.swift in Sources */,
 				EB6C0B07279B3BED0034763C /* BackgroundEnvironment.swift in Sources */,
 				EB6C0B00279B1EB70034763C /* DrBillPostsToHisOwnBlogDefinitions.swift in Sources */,
 			);

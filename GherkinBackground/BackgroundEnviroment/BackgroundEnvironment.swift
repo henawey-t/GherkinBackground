@@ -8,7 +8,7 @@
 import Foundation
 import class UIKit.UIPasteboard
 
-struct BackgroundEnvironment: Codable, PasteboardTemporaryStorage {
+final class BackgroundEnvironment: Codable, PasteboardTemporaryStorage {
     var globalAdministratorName: String?
     var blogName: String?
     var customerName: String?
