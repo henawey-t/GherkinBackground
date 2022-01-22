@@ -55,7 +55,7 @@ final class ViewController: UIViewController {
     func setup() {
         view.addSubview(valuesStackView)
         valuesStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.edges.lessThanOrEqualTo(view.safeAreaLayoutGuide)
         }
     }
 }

@@ -70,7 +70,7 @@ final class BackgroundEnvironmentSetupViewController: UIViewController {
     func setup() {
         view.addSubview(scenariosStackView)
         scenariosStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.edges.lessThanOrEqualTo(view.safeAreaLayoutGuide)
         }
     }
 }

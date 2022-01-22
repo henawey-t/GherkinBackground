@@ -23,7 +23,7 @@ final class BackgroundDefinitions {
             guard let currentScenario = CurrentTest.shared.currentScenario else {
                 fatalError("CurrentTest.shared.currentScenario is nil")
             }
-            currentScenario.background.setToPasteboard()
+            currentScenario.background.addToPasteboard()
             XCUIApplication().buttons[currentScenario.name].tap()
         }
     }

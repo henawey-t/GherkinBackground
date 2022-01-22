@@ -18,23 +18,23 @@ protocol PasteboardTemporaryStorage: Codable {
     associatedtype `Type`: Decodable = Self
     static var identifier: String { get }
     static func loadFromPasteboard() -> `Type`
-    func setToPasteboard()
+    func addToPasteboard()
 }
 
 extension PasteboardTemporaryStorage {
     static var identifier: String { String(describing: self) }
 
     static func loadFromPasteboard() -> `Type` {
-        let backgroundValue = UIPasteboard.general.items.first { dict in
-            return dict.keys.first == Self.identifier
-        }
-        return try! JSONDecoder().decode(`Type`.self, from: backgroundValue![Self.identifier] as! Data)
+        let pasteboard = UIPasteboard.general
+        let backgroundValue = pasteboard.data(forPasteboardType: Self.identifier)
+        pasteboard.setData(Data(), forPasteboardType: Self.identifier)
+        return try! JSONDecoder().decode(`Type`.self, from: backgroundValue!)
     }
 
-    func setToPasteboard() {
+    func addToPasteboard() {
         let data = try! JSONEncoder().encode(self)
 
         let pasteboard = UIPasteboard.general
-        pasteboard.addItems([[Self.identifier: data]])
+        pasteboard.setData(data, forPasteboardType: Self.identifier)
     }
 }
