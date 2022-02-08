@@ -11,7 +11,7 @@ import Cucumberish
 class Loader: NSObject {
     func setup() {
         beforeStart {
-            BackgroundDefinitions.stepsDefinition()
+            BackgroundDefinitions.stepsDefinition(action: DrBillPostsToHisOwnBlogActions())
             DrBillPostsToHisOwnBlogDefinitions.stepsDefinition()
             DrBillTriesToPostToSomebodyElseSBlogAndFails.stepsDefinition()
         }

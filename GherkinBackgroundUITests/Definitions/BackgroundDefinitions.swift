@@ -7,24 +7,21 @@
 
 import Cucumberish
 
-final class BackgroundDefinitions {    
-    static func stepsDefinition() {
+final class BackgroundDefinitions {
+    static func stepsDefinition(action: DrBillPostsToHisOwnBlog) {
         Given("^a global administrator named \"([^\\\"]*)\"$") { args, userInfo in
-            CurrentTest.shared.currentScenario?.background.globalAdministratorName = args?.first
+            action.a_global_administrator_named(name: args!.first!)
         }
         Given("^a blog named \"([^\\\"]*)\"$") { args, userInfo in
-            CurrentTest.shared.currentScenario?.background.blogName = args?.first
+            action.a_blog_named(name: args!.first!)
         }
         Given("^a customer named \"([^\\\"]*)\"$") { args, userInfo in
-            CurrentTest.shared.currentScenario?.background.customerName = args?.first
-        }
-
-        Given("I am logged in as Dr. Bill") { args, userInfo in
-            guard let currentScenario = CurrentTest.shared.currentScenario else {
-                fatalError("CurrentTest.shared.currentScenario is nil")
-            }
-            currentScenario.background.addToPasteboard()
-            XCUIApplication().buttons[currentScenario.name].tap()
+            action.a_customer_named(name: args!.first!)
         }
     }
+}
+protocol DrBillPostsToHisOwnBlog {
+    func a_global_administrator_named(name: String)
+    func a_blog_named(name: String)
+    func a_customer_named(name: String)
 }
